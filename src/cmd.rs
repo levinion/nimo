@@ -1,7 +1,7 @@
 #[derive(clap::Parser)]
 #[command(version, about, long_about = None)]
 pub struct Commands {
-    /// relative path to download from repo, such as levinion/dotfile/nvim/init.lua
+    /// relative path to download from repo, such as levinion/dotfiles/nvim/init.lua
     pub path: String,
     #[clap(short, long)]
     /// output path that should be a dir
