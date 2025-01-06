@@ -330,9 +330,9 @@ checksum = "07e28edb80900c19c28f1072f2e8aeca7fa06b23cd4169cefe1af5aa3260783f"
 
 [[package]]
 name = "gitload"
-version = "0.1.2"
+version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2427dc33efbc077b78b133800985e633fd915e4c7d01500d598d8af88616d7ca"
+checksum = "30a374910aad023f68e6ddfb6e075950ca198b43e3b52f9666b7eb55a7bce26c"
 dependencies = [
  "anyhow",
  "reqwest",
