@@ -14,5 +14,8 @@ async fn main() {
         client = client.branch(&cmd.branch.unwrap());
     }
     let client = client.build();
-    client.download().await.unwrap();
+    client
+        .download()
+        .await
+        .unwrap_or_else(|err| println!("{err}"));
 }
