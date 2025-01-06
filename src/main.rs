@@ -10,6 +10,9 @@ async fn main() {
     if cmd.output.is_some() {
         client = client.local_path(&cmd.output.unwrap());
     }
+    if cmd.branch.is_some() {
+        client = client.branch(&cmd.branch.unwrap());
+    }
     let client = client.build();
     client.download().await.unwrap();
 }
